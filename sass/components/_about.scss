@@ -1,0 +1,26 @@
+.about {
+    padding: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: .5rem;
+    background-color: $color-white;
+    transform: scale(1.02);
+    box-shadow: 0 0 3rem rgba($color-black, .1);
+    transition: all .3s;
+
+    @include respond(tab-port) {
+        width: 70%;
+        padding: 5rem;
+    }
+
+    &__img {
+        height: 15rem;
+        width: 15rem;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transition: all .3s;
+        transform: scale(1.02);
+        filter: brightness(110%);
+    }
+
+}

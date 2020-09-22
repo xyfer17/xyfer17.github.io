@@ -1,0 +1,82 @@
+.footer {
+    background-color: $color-white;
+    display: block;
+    box-shadow: 0 2rem 4rem rgba($color-black, .4);
+    position: relative;
+
+    &__item {
+        font-size: 5rem;
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 2rem;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &:first-child {
+            padding-left: 4rem;
+        }
+
+        &-up {
+            backface-visibility: hidden;
+            position: absolute;
+            right: .5rem;
+            top: 50%;
+            transform: translate(0, -50%) scale(1);
+            text-align: right;
+
+            &:hover {
+                transform: translate(0, -50%) scale(1.2);
+            }
+        }
+        
+    }
+
+    &__copyright {
+        position: absolute;
+        right: 8rem;
+        text-align: right;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $color-grey;    
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            background-image: linear-gradient(to bottom right, 
+                                $color-purple-light, 
+                                $color-purple-dark);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        &-up {
+            &:link,
+            &:visited {
+                background-image: none;
+                background-color: rgba($color-black, .75);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+
+}
+
+.footer__particles {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, 
+                        rgba($color-blue-light, .8), 
+                        rgba($color-blue-dark,.8)),
+                        url(../img/header-bg-1.jpg);
+    height: 30rem;
+}

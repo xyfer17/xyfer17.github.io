@@ -1,0 +1,109 @@
+.btn-beautX {
+    font-size: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    box-shadow: 0 0 3rem rgba($color-black, .1);
+    transition: all .3s;
+
+    &--blue {
+        background-color: $color-white;
+        color: $color-blue-light;
+        &:hover {
+            color: $color-white;
+            background-color: $color-blue-light;
+        }
+        &:active {
+            background-color: $color-white;
+            color: $color-blue-light;
+        }
+
+    }
+
+    &--orange {
+        background-color: $color-white;
+        color: $color-orange-light;
+        &:hover {
+            color: $color-white;
+            background-color: $color-orange-light;
+        }
+        &:active {
+            background-color: $color-white;
+            color: $color-orange-light;
+        }
+
+    }
+
+    &--green {
+        background-color: $color-white;
+        color: $color-green-light;
+        &:hover {
+            color: $color-white;
+            background-color: $color-green-light;
+        }
+        &:active {
+            background-color: $color-white;
+            color: $color-green-light;
+        }
+
+    }
+
+    &--purple {
+        background-color: $color-white;
+        color: $color-purple-light;
+        &:hover {
+            color: $color-white;
+            background-color: $color-purple-light;
+        }
+        &:active {
+            background-color: $color-white;
+            color: $color-purple-light;
+        }
+
+    }
+
+    &--red {
+        background-color: $color-white;
+        color: $color-red-light;
+        &:hover {
+            color: $color-white;
+            background-color: $color-red-light;
+        }
+        &:active {
+            background-color: $color-white;
+            color: $color-red-light;
+        }
+        
+    }
+
+    &--violet {
+        background-color: $color-white;
+        color: $color-violet-light;
+        &:hover {
+            color: $color-white;
+            background-color: $color-violet-light;
+        }
+        &:active {
+            background-color: $color-white;
+            color: $color-violet-light;
+        }
+
+    }
+
+    &--animated {
+        animation-name: moveInLeft;
+        animation-duration: .5s;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            animation-name: moveInBottom !important;
+        }
+    }
+}

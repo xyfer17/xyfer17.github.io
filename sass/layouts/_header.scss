@@ -1,0 +1,38 @@
+.header {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right,
+    rgba($color-blue-light, 1.6),
+    rgba($color-blue-dark,1.6)),
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+    }
+
+    &__logo {
+        height: 6rem;
+        border-radius: .5rem;
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__heading-box {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        @include respond(tab-port) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+
+}
